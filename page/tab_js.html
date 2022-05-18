@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithmique</title>
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+
+<!-- Javascript -->
+<script class="script">
+let max=prompt("Nombre maximum de table :");
+max = Number(max);
+document.write("<table border='1'>");
+ 
+document.write("<tr><td>X</td>");
+for(let i=1; i<=max ; i++) {
+    document.write("<td>", i, "</td>");
+}
+ 
+document.write("<tr>");
+ 
+for(let i=1; i<=max ; i++) {
+    document.write("<td>", i, "</td>");
+    for(let j=1; j<=max ; j++) {
+        document.write("<td>", i*j, "</td>");
+    }
+     
+    document.write("</tr>");
+ 
+     
+}
+document.write("</table>");
+ 
+ 
+ 
+let longeur = document.querySelectorAll("td").length;
+for(let i=max+2; i<=longeur;i++){
+        if(i%(max+2)===0){
+            let cases = document.querySelectorAll("td")[i];
+            cases.classList.add("case");
+        }
+         
+}
+</script>
+
+
+</body>
+</html>
