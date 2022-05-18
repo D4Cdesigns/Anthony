@@ -1,0 +1,156 @@
+/* Barre de défilement */
+
+body::-webkit-scrollbar {
+    width: 13px;
+}
+body::-webkit-scrollbar-track {
+    background: #ebebeb;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #777777;
+    border-radius: 20px;
+    border: 3px solid #ebebeb;
+}
+
+/*site web*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contenue{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.bat{
+    width: 50px;
+    position: absolute;
+    top: 8px; left: 60px;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logo:hover{
+    transform: scale(115%);
+    transition: 0.5s;
+}
+.home{
+    width: 50px;
+    cursor: pointer;
+    margin-right: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+.home:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    font-family: Montserrat, "sans-serif";
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+nav ul li a:hover{
+    color: #fe8787;
+    transition: 0s;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #323232;
+}
+.content p{
+    font-size: 20px;
+    color: #6a6a6a;
+}
+.content .click{
+    display: inline-block;
+    background: linear-gradient(45deg, #fe8787, #ffb777);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94, 28, 28, 0.15);
+    font-family: Montserrat, "sans-serif";
+    transition: 0.5s;
+}
+.content .click:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+.arrow-icons{
+    margin-top: 30px;
+    padding-left: 10px;
+    display: flex;
+}
+.arrow-icons img{
+    width: 40px;
+    margin-right: 40px;
+}
+.arrow-icons img:hover{
+    transform: scale(120%);
+    transition: 0.5s;
+}
+.slide{
+    width: 70px;
+    height: auto;
+    padding-top: 35px;
+    margin-left: 33px;
+}
+.affiche{
+    width: 50%;
+    margin-left: 45%;
+    margin-top: -38%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.social{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -110px;
+    bottom: 180px;
+}
+.social a{
+    text-decoration: none;
+    color: #333;
+    padding-right: 20px;
+    font-size: 15px;
+    font-family: Montserrat, "sans-serif";
+}
+.social a:hover{
+    color: #878dfe;
+}

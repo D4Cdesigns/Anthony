@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Barre de défilement */
+body::-webkit-scrollbar {
+    width: 13px;
+}
+body::-webkit-scrollbar-track {
+    background: #ebebeb;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #777777;
+    border-radius: 20px;
+    border: 3px solid #ebebeb;
+}
+.contenue{
+    width: 100%;
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    background-attachment: fixed;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.bat{
+    width: 50px;
+    position: absolute;
+    top: 8px; left: 60px;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logo:hover{
+    transform: scale(115%);
+    transition: 0.5s;
+}
+.home{
+    width: 50px;
+    cursor: pointer;
+    margin-right: -50px;
+    transition: 0.5s;
+}
+.home:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    font-family: Montserrat, "sans-serif";
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+nav ul li a:hover{
+    color: #fe8787;
+    transition: 0s;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+*{
+    box-sizing: border-box;
+}
+.cards{
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-left: 120px;
+    padding-bottom: 40px;
+    margin-top: -120px;
+}
+.card{
+    width: 200px;
+    margin: 10px;
+    border: 5px solid #e0e0e0;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+.card:hover{
+    border: 5px solid #fe8787;
+    transform: scale(103%);
+    transition: 0.6s;
+}
+.card img{
+    max-width: 100%;
+    border-radius: 30px;
+}
+.card h3{
+    font-family: Montserrat, "sans-serif";
+}
+.card p{
+    font-family: sans-serif;
+}
+.card .text{
+    padding: 0 20px 20px;
+}
+.card:nth-child(1){
+    width: 420px;
+}
+.social{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -110px;
+    bottom: 180px;
+}
+.social a{
+    text-decoration: none;
+    color: #333;
+    padding-right: 20px;
+    font-size: 15px;
+    font-family: Montserrat, "sans-serif";
+}
+.social a:hover{
+    color: #878dfe;
+}
