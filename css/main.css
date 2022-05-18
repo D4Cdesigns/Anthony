@@ -132,9 +132,9 @@ nav ul li a:hover{
     margin-left: 33px;
 }
 .affiche{
-    width: 50%;
-    margin-left: 45%;
-    margin-top: -38%;
+    width: 45%;
+    margin-left: 55%;
+    margin-top: -36%;
     display: flex;
     flex-wrap: wrap;
 }
