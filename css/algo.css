@@ -26,6 +26,15 @@ html{
     background-attachment: fixed;
     text-align: center;
 }
+table{
+    border: 2px groove black;
+}
+td{
+    border: 2px groove black;
+}
+th{
+    border: 2px groove black;
+}
 span{
     display: flex;
     justify-content: center;
