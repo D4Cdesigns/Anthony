@@ -3,47 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Algorithmique</title>
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="../img/icon.png">
+    <link rel="stylesheet" href="../css/algo.css">
 </head>
 <body>
+    <img src="../img/bat.gif" alt="batman" class="bat">
+    <img src="../img/logo.png" class="logo">
 
 <!-- Javascript -->
-<script class="script">
-let max=prompt("Nombre maximum de table :");
-max = Number(max);
-document.write("<table border='1'>");
- 
-document.write("<tr><td>X</td>");
-for(let i=1; i<=max ; i++) {
-    document.write("<td>", i, "</td>");
-}
- 
-document.write("<tr>");
- 
-for(let i=1; i<=max ; i++) {
-    document.write("<td>", i, "</td>");
-    for(let j=1; j<=max ; j++) {
-        document.write("<td>", i*j, "</td>");
-    }
-     
-    document.write("</tr>");
- 
-     
-}
-document.write("</table>");
- 
- 
- 
-let longeur = document.querySelectorAll("td").length;
-for(let i=max+2; i<=longeur;i++){
-        if(i%(max+2)===0){
-            let cases = document.querySelectorAll("td")[i];
-            cases.classList.add("case");
+<p></p>
+
+<p><button type="button" onclick="mon_programme()">Table des caractères</button></p>
+
+<script>
+
+    function tableau(N,ch){
+        var ch="";
+        var i;
+        var j;
+        ch+='<table>'+'<tr>'
+          ch+='<th>'+'</th>'
+        for (i=0;i<=N-1; i++){
+            ch+='<th>'+i+'</th>'
         }
-         
+        ch+='</tr>'
+    
+    
+        for(i=0; i<=N-1; i++){
+          ch+='<tr>'
+            ch+='<th>'+i+'</th>';
+            for(j=0; j<=N-1; j++){
+                ch+='<td>'+"&#"+(j+(i*N))+'</td>'
+            }
+            ch+='</tr>'
+        } 
+        ch+='</table>'
+        return ch;
+    }
+
+function mon_programme()
+{
+document.getElementById("res2").innerHTML=tableau(33);
+
 }
+
 </script>
 
+<span id='res2'></span>
 
 </body>
 </html>
