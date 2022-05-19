@@ -1,0 +1,58 @@
+/* Barre de défilement */
+
+body::-webkit-scrollbar {
+    width: 13px;
+}
+body::-webkit-scrollbar-track {
+    background: #ebebeb;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #777777;
+    border-radius: 20px;
+    border: 3px solid #ebebeb;
+}
+
+/*style*/
+
+html{
+    width: 100%;
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    background-attachment: fixed;
+    text-align: center;
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bat{
+    width: 50px;
+    position: absolute;
+    top: 3px; left: 645px;
+}
+.logo{
+    width: 150px;
+}
+button{
+    display: inline-block;
+    background: linear-gradient(45deg, #fe8787, #ffb777);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94, 28, 28, 0.15);
+    font-family: Montserrat, "sans-serif";
+    transition: 0.5s;
+}
+button:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
