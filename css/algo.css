@@ -27,13 +27,13 @@ html{
     text-align: center;
 }
 table{
-    border: 2px groove black;
+    border: 2px groove;
 }
 td{
-    border: 2px groove black;
+    border: 2px groove;
 }
 th{
-    border: 2px groove black;
+    border: 2px groove;
 }
 span{
     display: flex;
